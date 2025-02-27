@@ -55,14 +55,13 @@
         }
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-template-columns: 2fr 1fr 1fr;  /* Large image first, then two smaller images */
             gap: 15px;
             padding: 20px;
         }
         .gallery img {
             width: 100%;
             height: auto;
-            max-height: 400px;  /* Prevent images from being too large */
             border-radius: 10px;
             object-fit: cover;  /* Ensures images fill the space while maintaining their aspect ratio */
             transition: transform 0.3s;
@@ -123,8 +122,8 @@
         <section id="gallery" class="gallery">
             <h2>Gallery</h2>
             <img src="Assignment-1/IMG_2526.jpg" alt="Drake performing on stage">
+            <img src="Assignment-1/drake-1128804381.jpg" alt="Drake at an award show">
             <img src="Assignment-1/Drake.jpg" alt="Drake in God's Plan music video at UMiami">
-            <img src="Assignment-1/drake-1128804381.jpg.jpg" alt="Drake at an award show">
         </section>
     </main>
 </body>
