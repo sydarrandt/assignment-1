@@ -1,60 +1,105 @@
-        body {
-            font-family: 'Oswald', sans-serif;
+ body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #111;
+            color: white;
             margin: 0;
             padding: 0;
-            background-color: #0a0a0a;
-            color: #fff;
+            line-height: 1.6;
         }
-        nav {
-            background-color: #111;
-            padding: 15px;
-            text-align: center;
-        }
-        nav a {
-            color: #f5f5f5;
-            text-decoration: none;
-            margin: 0 20px;
-            font-weight: bold;
-            text-transform: uppercase;
-            transition: color 0.3s ease;
-        }
-        nav a:hover {
-            color: #ffd700;
-        }
+
         header {
             text-align: center;
-            padding: 40px;
-            background: url('Assignment-1/drake-banner.jpg') no-repeat center center/cover;
-            color: white;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-        }
-        main {
-            padding: 30px;
-            max-width: 900px;
-            margin: auto;
-        }
-        h1, h2 {
-            text-transform: uppercase;
-            border-bottom: 2px solid #ffd700;
-            padding-bottom: 5px;
-        }
-        .highlight {
-            color: #ffd700;
-            font-weight: bold;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr;  /* Large image first, then two smaller images */
-            gap: 15px;
             padding: 20px;
+            background: #333;
+            margin-bottom: 20px;
         }
+
+        header h1 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 3rem;
+            letter-spacing: 2px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #bbb;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin: 0 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            color: #f1c40f;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-family: 'Oswald', sans-serif;
+            font-size: 2rem;
+            color: #fff;
+            border-bottom: 2px solid #444;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        .highlight {
+            color: #f1c40f;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
         .gallery img {
-            width: 100%;
-            height: auto;
+            margin: 10px;
             border-radius: 10px;
-            object-fit: cover;  /* Ensures images fill the space while maintaining their aspect ratio */
-            transition: transform 0.3s;
+            transition: transform 0.3s ease-in-out;
         }
+
         .gallery img:hover {
             transform: scale(1.1);
+        }
+
+        .gallery img.large {
+            width: 50%; /* Make the large image occupy more space */
+        }
+
+        .gallery img.medium {
+            width: 30%; /* Adjust image width to maintain consistency */
+        }
+
+        ol, ul {
+            list-style-position: inside;
+            padding-left: 0;
+        }
+
+        ol li, ul li {
+            font-size: 1.1rem;
+            margin: 10px 0;
         }
