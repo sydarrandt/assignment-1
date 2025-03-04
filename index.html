@@ -83,7 +83,8 @@
 
         .gallery {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
+            gap: 20px; /* Space between images */
             flex-wrap: wrap;
         }
 
@@ -91,18 +92,20 @@
             margin: 10px;
             border-radius: 10px;
             transition: transform 0.3s ease-in-out;
+            max-width: 100%; /* Prevent stretching */
+            height: auto; /* Maintain aspect ratio */
         }
 
         .gallery img:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
 
         .gallery img.large {
-            width: 50%; /* Make the large image occupy more space */
+            width: 60%; /* Larger image */
         }
 
         .gallery img.medium {
-            width: 30%; /* Adjust image width to maintain consistency */
+            width: 30%; /* Smaller, but consistent width */
         }
 
         ol, ul {
@@ -144,32 +147,4 @@
         <section id="discography">
             <h2>Discography</h2>
             <ol>
-                <li>Thank Me Later (2010)</li>
-                <li>Take Care (2011)</li>
-                <li>Nothing Was the Same (2013)</li>
-                <li>Views (2016)</li>
-                <li>Scorpion (2018)</li>
-                <li>Certified Lover Boy (2021)</li>
-                <li>Honestly, Nevermind (2022)</li>
-                <li>For All the Dogs (2023)</li>
-            </ol>
-        </section>
-        
-        <section id="achievements">
-            <h2>Notable Achievements</h2>
-            <ul>
-                <li>Multiple Grammy Awards, including Best Rap Album for <em>"Take Care"</em></li>
-                <li>Record for most charted songs among solo artists in the history of the Billboard Hot 100</li>
-                <li>Founder of OVO Sound record label</li>
-            </ul>
-        </section>
-        
-        <section id="gallery" class="gallery">
-            <h3>Gallery</h3>
-            <img src="Assignment-1/IMG_2526.jpg" alt="Drake performing on stage" class="medium">
-            <img src="Assignment-1/drake-1128804381.jpg.jpg" alt="Drake at an award show" class="large">
-            <img src="Assignment-1/Drake.jpg" alt="Drake in God's Plan music video at UMiami" class="medium">
-        </section>
-    </main>
-</body>
-</html>
+                <li>Than
