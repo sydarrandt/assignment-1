@@ -81,6 +81,12 @@
             color: #f1c40f;
         }
 
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
         .gallery img {
             margin: 10px;
             border-radius: 10px;
@@ -91,6 +97,14 @@
             transform: scale(1.1);
         }
 
+        .gallery img.large {
+            width: 50%; /* Make the large image occupy more space */
+        }
+
+        .gallery img.medium {
+            width: 30%; /* Adjust image width to maintain consistency */
+        }
+
         ol, ul {
             list-style-position: inside;
             padding-left: 0;
@@ -99,18 +113,6 @@
         ol li, ul li {
             font-size: 1.1rem;
             margin: 10px 0;
-        }
-
-        .gallery {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .gallery img {
-            max-width: 100%;
-            height: auto;
-            width: 30%;
         }
     </style>
 </head>
@@ -162,13 +164,11 @@
             </ul>
         </section>
         
-        <section>
-            <section id="gallery" class="gallery">
-                <h3>Gallery</h3>
-                <img src="Assignment-1/IMG_2526.jpg" alt="Drake performing on stage" width="254">
-                <img src="Assignment-1/drake-1128804381.jpg.jpg" alt="Drake at an award show" width="456">
-                <img src="Assignment-1/Drake.jpg" alt="Drake in God's Plan music video at UMiami" width="401">
-            </section>
+        <section id="gallery" class="gallery">
+            <h3>Gallery</h3>
+            <img src="Assignment-1/IMG_2526.jpg" alt="Drake performing on stage" class="medium">
+            <img src="Assignment-1/drake-1128804381.jpg.jpg" alt="Drake at an award show" class="large">
+            <img src="Assignment-1/Drake.jpg" alt="Drake in God's Plan music video at UMiami" class="medium">
         </section>
     </main>
 </body>
