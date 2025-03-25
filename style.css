@@ -1,70 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Life and Career of Drake</title>
-    <meta name="author" content="Aisha Ortiz"> 
-    <meta name="description" content="An informational webpage about Canadian rapper and singer Drake.">
-    <meta name="keywords" content="Drake, Aubrey Graham, Degrassi, Hip-Hop, Rapper, OVO Sound">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav>
-        <a href="#early-life">Early Life</a>
-        <a href="#music">Music Career</a>
-        <a href="#discography">Discography</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#gallery">Gallery</a>
-    </nav>
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-    <header>
-        <h1>The Life and Career of Drake</h1>
-        <p><strong class="highlight">Drake</strong>, born Aubrey Drake Graham on <mark>October 24, 1986</mark>, in Toronto, Canada.</p>
-    </header>
-    
-    <main>
-        <section id="early-life">
-            <h2>Early Life and Acting Career</h2>
-            <p>Drake was born to Dennis Graham, an African-American drummer for Jerry Lee Lewis, and Sandi Graham, a Canadian Jewish educator. He attended Forest Hill Collegiate Institute, where he developed an interest in the arts. In 2001, Drake began his acting career, portraying Jimmy Brooks on <strong>"Degrassi: The Next Generation"</strong>, a role he held until 2009.</p>
-        </section>
-        
-        <section id="music">
-            <h2>Transition to Music and Rise to Fame</h2>
-            <p>While still acting, Drake released his debut mixtape, "Room for Improvement," in 2006, followed by "Comeback Season" in 2007. His third mixtape, <em>"So Far Gone"</em> (2009), featured the hit single <strong>"Best I Ever Had"</strong>, propelling him into the music spotlight. In 2010, he released his debut studio album, <em>"Thank Me Later"</em>, which debuted at number one on the Billboard 200.</p>
-        </section>
-        
-        <section id="discography">
-            <h2>Discography</h2>
-            <ol>
-                <li>Thank Me Later (2010)</li>
-                <li>Take Care (2011)</li>
-                <li>Nothing Was the Same (2013)</li>
-                <li>Views (2016)</li>
-                <li>Scorpion (2018)</li>
-                <li>Certified Lover Boy (2021)</li>
-                <li>Honestly, Nevermind (2022)</li>
-                <li>For All the Dogs (2023)</li>
-            </ol>
-        </section>
-        
-        <section id="achievements">
-            <h2>Notable Achievements</h2>
-            <ul>
-                <li>Multiple Grammy Awards, including Best Rap Album for <em>"Take Care"</em></li>
-                <li>Record for most charted songs among solo artists in the history of the Billboard Hot 100</li>
-                <li>Founder of OVO Sound record label</li>
-            </ul>
-        </section>
+/* Navigation */
+nav {
+    background: #000;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #ffcc00;
+}
 
-        <h2>Gallery</h2>
-        <section id="gallery" class="gallery">
-            <img src="Assignment-1/IMG_2526.jpg" alt="Drake performing on stage">
-            <img src="Assignment-1/drake-1128804381.jpg.jpg" alt="Drake at an award show">
-            <img src="Assignment-1/Drake.jpg" alt="Drake in God's Plan music video at UMiami">
-        </section>
-    </main>
-</body>
-</html>
+/* Header */
+header {
+    text-align: center;
+    background: url('header-background.jpg') no-repeat center center/cover;
+    padding: 60px 20px;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+header h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+}
+
+/* Sections */
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+section h2 {
+    font-family: 'Oswald', sans-serif;
+    border-bottom: 3px solid #ffcc00;
+    padding-bottom: 5px;
+}
+
+/* Highlighted Text */
+.highlight {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+mark {
+    background-color: #ffcc00;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* Lists */
+ol, ul {
+    padding-left: 20px;
+}
+ol li, ul li {
+    margin: 10px 0;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+.gallery img {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
